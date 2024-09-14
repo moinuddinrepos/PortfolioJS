@@ -15,8 +15,10 @@
         <img src="./images/header-bg-color.png" class="w-full" alt="">
     </div>
     <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
-        <img id="home" src="./images/logo.png" alt="" class="w-28 cursor-pointer mr-14 dark:hidden">
-        <img src="./images/logo_dark.png" alt="" class="w-28 cursor-pointer mr-14 hidden dark:block">
+        <a href="" id="home">
+            <img id="home" src="./images/logo.png" alt="" class="w-28 cursor-pointer mr-14 dark:hidden">
+            <img id="home" src="./images/logo_dark.png" alt="" class="w-28 cursor-pointer mr-14 hidden dark:block">
+        </a>
         <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
@@ -42,7 +44,7 @@
                 <img src="./images/close-white.png" class="w-5 cursor-pointer hidden dark:block" alt="">
             </div>
             <li><a href="#home" onclick="closeMenu()">Home</a></li>
-            <li><a href="#aboutme" onclick="closeMenu()">About Me</a></li>
+            <li><a href="#about" onclick="closeMenu()">About Me</a></li>
             <li><a href="#work" onclick="closeMenu()">My Work</a></li>
             <li><a href="#services" onclick="closeMenu()">Services</a></li>
             <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
@@ -244,15 +246,18 @@
        <!-- footer -->
 
        <div class="mt-20">
-            <div class="text-center">
-                <img src="./images/logo.png" class="w-36 mx-auto mb-2 dark:hidden" alt="">
-                <img src="./images/logo_dark.png" class="w-36 mx-auto mb-2 hidden dark:block" alt="">
-                <div class="w-max flex items-center gap-2 mx-auto">
-                    <img src="./images/mail_icon.png" class="w-6 dark:hidden" alt="">
-                    <img src="./images/mail_icon_dark.png" class="w-6 hidden dark:block" alt="">
-                    mdkhajamoinuddincm035@gmail.com
+            <a href="" id="home">
+                <div class="text-center">
+                    <img id="home" src="./images/logo.png" class="w-36 mx-auto mb-2 dark:hidden" alt="">
+                    <img id="home" src="./images/logo_dark.png" class="w-36 mx-auto mb-2 hidden dark:block" alt="">
+                    <div class="w-max flex items-center gap-2 mx-auto">
+                        <img src="./images/mail_icon.png" class="w-6 dark:hidden" alt="">
+                        <img src="./images/mail_icon_dark.png" class="w-6 hidden dark:block" alt="">
+                        mdkhajamoinuddincm035@gmail.com
+                    </div>
                 </div>
-            </div>
+            </a>
+
             <div class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
                 <p>&copy; 2024 Moinuddin. All rights reserved.</p>
                 <ul class="flex items-center gap-5 justify-center mt-4 sm:mt-0">
@@ -263,15 +268,16 @@
                     <li><a href="https://www.linkedin.com/in/moinuddin006/" target="_blank"><img src="./images/linkedin.png" class="w-8" alt=""></a></li>
                     <li><a href="https://www.instagram.com/moinuddin006/" target="_blank"><img src="./images/instagram.png" class="w-8" alt=""></a></li>
                     <li><a href="https://www.facebook.com/Moinuddin006" target="_blank"><img src="./images/facebook.png" class="w-8" alt=""></a></li>
-                    <li><a href="https://www.x.com/moinuddiniam/" target="_blank"><img src="./images/x.png" class="w-8 hidden dark:block " alt=""></a></li>
+                    <li><a href="https://www.x.com/moinuddiniam/" target="_blank"><img src="./images/x.png" class="w-8" alt=""></a></li>
                 </ul>
             </div>
        </div>
        <!-- counter visit -->
-       <div class="mt-0 flex items-center justify-center text-[18px] p-2">
-           <button id="reset" disabled class="p-2 bg-[#22c1c3] m-3 rounded" ondblclick="resetButton()">Reset</button>
-        <div class="p-2 bg-gray-500 rounded">Website visit count:</div>
-        <div class="website-counter bg-[#22c1c3] p-2 ml-3 rounded"></div>
+       <div class="mb-5 flex items-center justify-center">
+            <button id="reset" disabled class="p-[1px] m-[1px] bg-[#22c1c3] rounded" ondblclick="resetButton()">Reset</button>
+            <div class="bg-gray-300 text-black rounded flex items-center text-[10px] justify-center p-1 ">Website visit count: 
+                <div class="website-counter bg-[#22c1c3] text-[10px] ml-2 p-1 rounded"></div>
+            </div>
        </div>
     <script src="script.js"></script>
 </body>
