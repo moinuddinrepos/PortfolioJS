@@ -61,3 +61,15 @@ resetButton.addEventListener("click", () => {
   localStorage.setItem("page_view", 1);
   counterContainer.innerHTML = visitCount;
 });
+
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbz-u0JjgqJj3gk5sj0M9o8My8YhuA-DlqLfsSm00k0C601cXS-KWbmu40GpYrVfKSfaTw/exec'
+const form = document.forms['submit-to-google-sheet']
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => console.log('Success!', response))
+    .catch(error => console.error('Error!', error.message))
+})
+

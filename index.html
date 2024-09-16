@@ -31,7 +31,7 @@
                 <img src="./images/moon_icon.png" class="w-6 dark:hidden" alt="">
                 <img src="./images/sun_icon.png" class="w-6 hidden dark:block" alt="">
             </button>
-        <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 rounded-full ml-4 bg-gradient-to-r from-[#22c1c3] to-[#6dc057]">Contact <img src="./images/arrow-icon.png" alt="" class="w-3"></a>
+        <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 rounded-full ml-4 bg-gradient-to-r from-[#22c1c3] to-[#6dc057]  hover:py-3 hover:px-11 duration-500">Contact <img src="./images/arrow-icon.png" alt="" class="w-3"></a>
 
         <button onclick="openMenu()" class="block md:hidden ml-3">
             <img src="./images/menu-black.png" class="w-6 dark:hidden" alt="">
@@ -55,15 +55,25 @@
      <div id="home" class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
         <img src="./images/profile-img.jpg" class="rounded-full w-32" alt="">
         <h3 class="flex items-center gap-2 text-xl md:text-2xl mb-3">Hi I'm Moinuddin <img src="./images/hand-icon.png" class="w-6" alt=""></h3>
+    <!-- social icons -->
+    <!-- <div class=" bg-gray-500  p-2 rounded-l-lg flex items-end justify-end">
+        <ul class="flex flex-row gap-2 sm:mt-0">
+            <li><a href="https://github.com/moinuddinrepos" target="_blank"><img src="./images/github.png" class="w-8 hover:p-1 duration-500" alt=""></a></li>
+            <li><a href="https://www.linkedin.com/in/moinuddin006/" target="_blank"><img src="./images/linkedin.png" class="w-8 hover:p-1 duration-500" alt=""></a></li>
+            <li><a href="https://www.instagram.com/moinuddin006/" target="_blank"><img src="./images/instagram.png" class="w-8 hover:p-1 duration-500" alt=""></a></li>
+            <li><a href="https://www.facebook.com/Moinuddin006" target="_blank"><img src="./images/facebook.png" class="w-8 hover:p-1 duration-500" alt=""></a></li>
+            <li><a href="https://www.x.com/moinuddiniam/" target="_blank"><img src="./images/x.png" class="w-8 hover:p-1 duration-500" alt=""></a></li>
+        </ul>
+    </div> -->
         <!-- <h1 class="text-3xl md:text-6xl lg:text-[66]">Developer</h1> -->
         <h3 class="text-3xl">Web Designer | Frontend Developer  |  BRM Developer</h3>
         <p class="max-w-3xl">
             With two years in web development and design, I create user-friendly, visually appealing websites. My experience covers both front-end and back-end work, ensuring seamless functionality and engaging design.</p>
         <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
 
-            <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#22c1c3] to-[#6dc057] text-white flex items-center gap-2 dark:border-transparent">Contact Me <img src="./images/right-arrow-white.png" class="w-4" alt=""></a>
+            <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#22c1c3] to-[#6dc057] text-white flex items-center gap-2 dark:border-transparent hover:px-11 hover:py-4 duration-500">Contact Me <img src="./images/right-arrow-white.png" class="w-4" alt=""></a>
 
-            <a href="./images/MD_Khaja_Moinuddin.pdf" download class="px-10 py-3 border rounded-full border-gray-400 bg-white flex items-center gap-2 dark:text-black">Download CV<img src="./images/download-icon.png" class="w-4" alt=""></a>
+            <a href="./images/MD_Khaja_Moinuddin.pdf" download class="px-10 py-3 hover:px-11 hover:py-4 duration-500 border rounded-full border-gray-400 bg-white flex items-center gap-2 dark:text-black">Download CV<img src="./images/download-icon.png" class="w-4" alt=""></a>
             
         </div>
      </div>
@@ -228,16 +238,16 @@
         <h2 class="text-center text-5xl">Contact</h2>
         <p class="text-center mx-auto mt-5 mb-12">If you have any questions or just want to connect, don’t hesitate to reach out. I'm here to talk and chat with you!</p>
 
-        <form method="post" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
+        <form method="post" name="submit-to-google-sheet" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
             <input type="hidden" name="access_key" value="710d5c9d-95c2-4b3b-b7f0-99ef68fcf04e">
             <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
-                <input type="text" required name="name" placeholder="Enter your name" class="flex-1 outline-none p-3 border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-[#313131]/30" id="">
+                <input type="text" required name="Name" placeholder="Enter your name" class="flex-1 outline-none p-3 border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-[#313131]/30" id="">
                 
-                <input type="email" required name="email" placeholder="Enter your email" class="flex-1 outline-none p-3 border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-[#313131]/30" id="">
+                <input type="email" required name="Email" placeholder="Enter your email" class="flex-1 outline-none p-3 border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-[#313131]/30" id="">
             </div>
-            <textarea name="message" rows="6" required placeholder="Enter message here..." class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-[#313131]/30" id=""></textarea>
+            <textarea name="Message" rows="6" required placeholder="Enter message here..." class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-[#313131]/30" id=""></textarea>
             <div class="h-captcha" data-captcha="true"></div><br>
-            <button class="py-3 px-8 w-max flex items-center justify-between bg-[#b4e4e5] gap-2 rounded-full mx-auto hover:bg-[#22c1c3] duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-[#313131]">Submit Now
+            <button type="submit" class="py-3 px-8 w-max flex items-center justify-between bg-[#b4e4e5] gap-2 rounded-full mx-auto hover:bg-[#22c1c3] duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-[#313131]">Submit Now
                 <img src="./images/right-arrow-white.png" class="w-4" alt="">
             </button>
         </form>
