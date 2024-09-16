@@ -40,7 +40,6 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
 
 //   visitor counter
 
-
 var counterContainer = document.querySelector(".website-counter");
 var resetButton = document.querySelector("#reset");
 var visitCount = localStorage.getItem("page_view");
@@ -62,13 +61,22 @@ resetButton.addEventListener("click", () => {
   counterContainer.innerHTML = visitCount;
 });
 
+//code for storing form data in google sheet and showing response form form is submited successfully.
 
+const msgResponse = document.getElementById('msgResponse')
 const scriptURL = 'https://script.google.com/macros/s/AKfycbz-u0JjgqJj3gk5sj0M9o8My8YhuA-DlqLfsSm00k0C601cXS-KWbmu40GpYrVfKSfaTw/exec'
 const form = document.forms['submit-to-google-sheet']
+
 form.addEventListener('submit', e => {
   e.preventDefault()
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => console.log('Success!', response))
+    .then(response =>{
+      msgResponse.innerHTML = 'Thank You for Reaching Out!'
+      setTimeout(() => {
+        msgResponse.innerHTML = ''
+      }, 5000)
+      form.reset()
+    } )
     .catch(error => console.error('Error!', error.message))
 })
 
